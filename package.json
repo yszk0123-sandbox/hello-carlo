@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "name": "hello-carlo",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "carlo": "^0.9.11"
+  }
+}

@@ -1,0 +1,19 @@
+<script>
+(() => {
+  function createDiv(text) {
+    const element = document.createElement('div');
+    element.textContent = text;
+    return element;
+  }
+
+  async function run() {
+    const data = await env();
+    for (const [type, value] of Object.entries(data)) {
+      const element = createDiv(`${type}: ${value}`);
+      document.body.appendChild(element);
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', run);
+})();
+</script>
